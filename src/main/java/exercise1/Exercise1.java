@@ -1,4 +1,4 @@
-package main.java;
+package main.java.exercise1;
 
 import java.text.Normalizer;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class Exercise1 {
 
             switch (option) {
                 case 1:
-                    System.out.print("\nEnter a String to check if it is a palindrom: ");
+                    System.out.print("\nEnter a String to check if it is a palindrome: ");
                     scanner.nextLine();
 
                     String phrase = scanner.nextLine();
@@ -35,9 +35,9 @@ public class Exercise1 {
                     phrase.replace(" ", "");
 
                     if (phrase.equalsIgnoreCase(new StringBuilder(phrase).reverse().toString())) {
-                        System.out.println("\nIt is a palindrom.");
+                        System.out.println("\nIt is a palindrome.");
                     } else {
-                        System.out.println("\nIt is not a palindrom.");
+                        System.out.println("\nIt is not a palindrome.");
                     }
 
                     break;
